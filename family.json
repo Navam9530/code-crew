@@ -1,0 +1,48 @@
+{
+  "$schema": "https://agentsmp.com/schemas/family/v1.json",
+  "schemaVersion": 1,
+  "name": "Navam9530_code-crew",
+  "description": "Reviews a diff with a reviewer and a tester.",
+  "version": "0.1.0",
+  "agents": {
+    "id": "lead",
+    "name": "lead",
+    "description": "Splits a review into parts and merges the results.",
+    "model": {
+      "provider": "anthropic",
+      "name": "claude-sonnet-5-5"
+    },
+    "position": {
+      "x": 0,
+      "y": 0
+    },
+    "mcps": [],
+    "skills": [],
+    "sub-agents": [
+      {
+        "id": "reviewer",
+        "name": "reviewer",
+        "description": "Reads diffs and writes review comments.",
+        "position": {
+          "x": 320,
+          "y": 0
+        },
+        "mcps": [],
+        "skills": [],
+        "sub-agents": []
+      },
+      {
+        "id": "tester",
+        "name": "tester",
+        "description": "Suggests test cases for the change.",
+        "position": {
+          "x": 320,
+          "y": 120
+        },
+        "mcps": [],
+        "skills": [],
+        "sub-agents": []
+      }
+    ]
+  }
+}
