@@ -12,10 +12,6 @@
       "provider": "anthropic",
       "name": "claude-sonnet-5-5"
     },
-    "position": {
-      "x": 0,
-      "y": 0
-    },
     "mcps": [],
     "skills": [],
     "sub-agents": [
@@ -23,10 +19,6 @@
         "id": "reviewer",
         "name": "reviewer",
         "description": "Reads diffs and writes review comments.",
-        "position": {
-          "x": 320,
-          "y": 0
-        },
         "mcps": [],
         "skills": [],
         "sub-agents": []
@@ -35,10 +27,6 @@
         "id": "tester",
         "name": "tester",
         "description": "Suggests test cases for the change.",
-        "position": {
-          "x": 320,
-          "y": 120
-        },
         "mcps": [],
         "skills": [],
         "sub-agents": []
